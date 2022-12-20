@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FD967A"
+            android:fontFamily="@font/regular"
+            android:padding="10dp"
+            android:text="게시글 작성"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_margin="10dp"
+                android:background="@drawable/border_background"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_margin="10dp"
+                    android:id="@+id/message0"
+                    android:textSize="30dp"
+                    android:maxLines="1"
+                    android:hint="지역 입력"
+                    android:background="@null"
+                    android:textAlignment="center"
+                    android:cursorVisible="false"
+                    android:textColor="#2348FF"
+                    android:textColorHint="#5A76FF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/help_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_help_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/border_background"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/message1"
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:hint="전화번호 입력"
+                android:textAlignment="center"
+                android:cursorVisible="false"
+                android:textColor="#FF2323"
+                android:background="@null"
+                android:textColorHint="#FF5A5A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/border_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/message2"
+                android:textSize="25dp"
+                android:minLines="5"
+                android:maxLines="8"
+                android:hint="정보 입력"
+                android:background="@null"
+                android:layout_margin="10dp"
+                android:cursorVisible="false"
+                android:textColor="#000000"
+                android:textColorHint="#333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <FrameLayout
+                android:background="@drawable/border_background"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:padding="15dp"
+                    android:src="@drawable/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/border_background"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:id="@+id/imageText"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="@string/choose_image"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:text="게시글 등록"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

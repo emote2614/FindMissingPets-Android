@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="choose_image"><u>이미지를 선택해주세요</u></string>
+</resources>
